@@ -1,0 +1,78 @@
+Optimisation des performances
+Images :
+
+Compresser les images : Les images sur le site sont trop lourdes, et cela ralentit le chargement. Utilise des outils comme ImageOptim ou TinyPNG pour les compresser.
+Réduction attendue : 22,768 KiB
+Utiliser le format WebP : Ce format est plus léger que le JPEG ou PNG et améliore les temps de chargement sans perte de qualité.
+Implémenter le Lazy Loading : Les images qui ne sont pas visibles immédiatement (comme dans le portfolio) doivent être chargées uniquement quand l’utilisateur les voit.
+Spécifier les dimensions des images : Ajoute explicitement les attributs width et height aux balises <img> pour éviter les décalages de mise en page (CLS).
+JavaScript et CSS :
+
+Minifier le JavaScript : Réduire la taille des fichiers JavaScript en supprimant les espaces inutiles et les commentaires.
+Réduction attendue : 16 KiB
+Minifier le CSS : Réduire la taille des fichiers CSS en supprimant les espaces inutiles et les commentaires.
+Réduction attendue : 5 KiB
+Charger les scripts en mode asynchrone ou avec defer : Modifie les balises <script> pour utiliser l'attribut async ou defer afin de ne pas bloquer le rendu de la page.
+Éliminer les ressources de rendu bloquantes : Réduire l’impact des fichiers CSS et JavaScript qui ralentissent le rendu de la page.
+Réduire l'impact du code tiers :
+
+Réduire le temps de traitement des scripts tiers (comme Google Fonts, jQuery).
+Troisième code a bloqué le fil principal pendant 730ms. Charge ces ressources de manière asynchrone si possible.
+Améliorer le temps de réponse du serveur :
+
+Optimiser la mise en cache : Utilise une politique de cache efficace pour les ressources statiques. 20 ressources n'ont pas de politique de mise en cache efficace.
+Amélioration du SEO
+Ajouter une balise <title> :
+
+Il manque un titre à la page. Ajoute un titre pertinent pour améliorer le SEO.
+Exemple : <title>Nina Carducci - Photographe</title>
+Ajouter une balise <meta description> :
+
+Il n'y a pas de balise meta description. Cette balise est utilisée par les moteurs de recherche pour décrire la page dans les résultats de recherche.
+Exemple : <meta name="description" content="Photographe professionnelle spécialisée dans les portraits et événements.">
+Ajouter des balises alt pour les images :
+
+Les images n'ont pas de texte alternatif, ce qui affecte le SEO. Chaque image doit avoir une balise alt décrivant l'image.
+Exemple : <img src="image.jpg" alt="Couple dansant à un mariage">
+Améliorer la structure HTML :
+
+Réorganiser les titres et sous-titres pour suivre une structure logique. Les éléments <h1>, <h2>, etc., doivent suivre un ordre descendant.
+Amélioration de l'accessibilité
+Ajouter des balises alt aux images :
+
+En plus d'aider le SEO, les balises alt sont nécessaires pour l'accessibilité des utilisateurs utilisant des lecteurs d’écran.
+Ajouter des labels pour les éléments de formulaire :
+
+Chaque élément de formulaire (comme les champs pour le nom et l’email) doit avoir un label associé pour être accessible.
+Exemple : <label for="nom">Nom :</label> <input type="text" id="nom" name="nom">
+Améliorer le contraste des couleurs :
+
+Assure-toi que le texte sur les arrière-plans colorés ait suffisamment de contraste pour être lisible. Utilise des outils comme Contrast Checker pour vérifier les combinaisons de couleurs.
+Ajouter l'attribut lang à la balise <html> :
+
+La balise <html> doit avoir un attribut lang pour indiquer la langue du site. Ceci aide les moteurs de recherche et les outils d'accessibilité à comprendre la langue de la page.
+Exemple : <html lang="fr">
+Vérifier l'ordre des titres (<h1>, <h2>, etc.) :
+
+Les titres doivent être hiérarchisés correctement (pas de saut direct de <h1> à <h3>, par exemple).
+Optimisations supplémentaires (facultatives)
+Minifier HTML :
+
+Minifie également le fichier HTML pour réduire son poids et accélérer le chargement.
+Utiliser des polices système :
+
+Si possible, utilise des polices système pour réduire la dépendance à des services comme Google Fonts.
+Limiter la taille des fichiers CSS/JavaScript inutilisés :
+
+Supprime tout code CSS ou JavaScript qui n'est pas utilisé sur la page actuelle pour réduire la taille des fichiers.
+Priorisation des tâches
+Tu peux classer ces tâches selon leur priorité :
+
+Haute priorité : Optimisation des images, ajout de balises title et alt, lazy loading.
+Moyenne priorité : Minification des fichiers CSS/JavaScript, amélioration du SEO (meta description).
+Basse priorité : Amélioration du contraste, suppression du CSS/JavaScript inutilisé.
+Ressources pour t'aider :
+TinyPNG : Outil pour compresser les images.
+Contrast Checker : Outil pour vérifier le contraste des couleurs.
+Google Fonts : Charger les polices de manière asynchrone.
+Lighthouse Guide : Référence complète pour améliorer les scores Lighthouse.
