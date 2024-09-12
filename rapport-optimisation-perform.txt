@@ -1,0 +1,21 @@
+Rapport d'optimisation - Performances
+
+Résultats actuels de l’audit Lighthouse :
+Performance : 94
+Accessibilité : 70
+Bonnes pratiques : 96
+SEO : 73
+
+Étapes d'optimisation effectuées :
+
+1. Optimisation des images
+Compression des images : Les images lourdes du site ont été compressées à l'aide d'outils comme TinyPNG et ImageOptim pour améliorer les temps de chargement.
+Utilisation du format WebP : Certaines images ont été converties au format WebP, plus léger que JPEG et PNG, pour une meilleure optimisation.
+Lazy Loading : Le chargement différé des images a été mis en place à l'aide de l'attribut loading="lazy" sur toutes les balises <img>. Cela permet de charger les images seulement lorsqu’elles sont visibles à l’écran, ce qui réduit le temps de chargement initial.
+Spécification des dimensions d'images : Les dimensions explicites (width et height) ont été ajoutées pour éviter les décalages de mise en page (Cumulative Layout Shift - CLS).
+Impact :
+
+2. Chargement asynchrone et différé des scripts
+Déféralisation des scripts : Les scripts ont été modifiés avec l'attribut defer, permettant au contenu de la page de se charger avant l'exécution des fichiers JavaScript, réduisant ainsi le Total Blocking Time (TBT).
+Impact :
+

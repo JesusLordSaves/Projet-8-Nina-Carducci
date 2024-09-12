@@ -1,0 +1,10 @@
+Rapport d'Optimisation SEO Technique
+Objectif :
+Atteindre un score SEO supérieur ou égal à 90 % dans le rapport Lighthouse, tout en optimisant le code et la structure du site pour améliorer la visibilité sur les moteurs de recherche et l'expérience utilisateur.
+
+Résultats actuels :
+Score SEO : 100 % (objectif atteint).
+Le site répond aux meilleures pratiques recommandées pour l'optimisation des moteurs de recherche.
+
+Modifications et optimisations réalisées :
+Minification du fichier style.css
